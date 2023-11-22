@@ -26,9 +26,7 @@ body {
   @media (min-width: 1280px) {
     font-size: 1rem;
   }
-  @media (min-width: 1536px) {
-    font-size: 6rem;
-  }
+  
 }
 
 .h2-1 {
@@ -45,9 +43,7 @@ body {
   @media (min-width: 1280px) {
     font-size: 1rem;
   }
-  @media (min-width: 1536px) {
-    font-size: 6rem;
-  }
+ 
 }
 
 .btn {
