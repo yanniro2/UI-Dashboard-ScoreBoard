@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1280px",
+                    "2xl": "1920px",
+                },
+                extend: {},
+                fontFamily: {
+                    poppins: ["Poppins", "sans-serif"],
+                    roboto: ["Roboto", "sans-serif"],
+                    Digital: ["DS-Digital", "sans-serif"],
+                    custom: ["DS-DIGIB", "sans-serif"],
+                },
+            }
+        }
+    </script>
+</head>
+<body class="w-full h-full bg-gray-950 text-white md:text-[1rem] lg:text-[1rem] text-[1rem] xl:text-[1rem] 2xl:text-[6rem] p-[1rem]">
+    <form  class="flex gap-[1rem] items-start h-full w-full">
+        <div class="box-2 p-3 md:w-full sm:w-full">
+            <!-- Popup component -->
+            <div class="flex items-center gap-[1rem] justify-center">
+                <button class="btn bg-blue-400 capitalize flex items-center gap-[1rem]">
+                    <span>Live</span>
+                </button>
+                <button class="btn bg-red-400 flex items-center gap-[1rem]" > 
+                    Stop
+                </button>
+            
+                <button class="btn bg-green-400 flex items-center gap-[1rem]">
+                    <span>Save</span>
+                </button>
+            </div>
+            <!-- VsChange component -->
+            <div
+                class="w-full h-full flex flex-col justify-evenly bg-gray-900 rounded-xl p-5 text-white text-center font-roboto ">
+                <h2 class="h2-1">Title</h2>
+            
+                <div class="w-full h-full flex text-center justify-evenly">
+                    <!-- Radio buttons and labels -->
+                    <div class="flex items-center justify-center gap-[1rem] w-full">
+                        <label class="form-control">
+                            <input type="radio" name="radio" />
+                            Radio
+                        </label>
+                    
+                        <label class="form-control">
+                            <input type="radio" name="radio" checked />
+                            Radio - checked
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- Layout component -->
+            <div
+                class="w-full h-full flex flex-col justify-evenly bg-gray-900 rounded-xl p-5 text-white text-center font-roboto ">
+                <h2 class="h2-1">Title</h2>
+            
+                <div class="w-full h-full flex text-center justify-evenly">
+                    <!-- Radio buttons and labels -->
+                    <div class="flex items-center justify-center gap-[1rem] w-full">
+                        <label class="form-control">
+                            <input type="radio" name="radio" />
+                            Radio
+                        </label>
+                        
+                        <label class="form-control">
+                            <input type="radio" name="radio" checked />
+                            Radio - checked
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 p-3 w-1/2 h-full rounded-xl md:w-full sm:w-full">
+            <div class="bg-gray-900 w-full h-full rounded-xl flex flex-col items-center gap-[1rem]">
+                <!-- ShowTime component or Loading -->
+                <div class="text-red-600 font-custom font-bold text-[5rem]">
+                    <!-- Displayed time: MM:SS -->
+                    12:22
+                </div>
+                <div class="flex w-full h-min bg-gray-900 flex-col gap-[1rem] rounded-xl">
+
+                    <!-- Time / Duration Input -->
+                    <div class="box-1 w-3/4 mx-auto">
+                        <input type="number" id="teamA" name="teamA" class="input" placeholder="enter duration" />
+                    
+                        <input type="number" id="teamB" name="teamB" class="input" placeholder="enter aditional time" />
+                    </div>
+                    <!-- TeamNames component or Loading -->
+                    <div class="w-3/4 flex items-start justify-between p-3 mx-auto">
+
+
+                        
+                        <div class="h2">
+                            <!-- Team A Name -->
+                            team A
+                        </div>
+                        <div class="h2">
+                            <!-- Team B Name -->
+                            team B
+                        </div>
+                    </div>
+                    <!-- InputField components -->
+
+                    
+                    <div class="box-1">
+                        <input type="number" id="teamA" name="teamA" class="input" placeholder="enter value" />
+                        <h2 class="capitalize font-roboto font-normal tracking-wider flex items-center justify-center text-gray-500">
+                            <!-- Enter name -->
+                            Try
+                        </h2>
+                        <input type="number" id="teamB" name="teamB" class="input" placeholder="enter value" />
+                    </div>
+
+                    <!-- InputField components -->
+                    <div class="box-1">
+                        <input type="number" id="teamA" name="teamA" class="input" placeholder="enter value" />
+                        <h2 class="capitalize font-roboto font-normal tracking-wider flex items-center justify-center text-gray-500">
+                            <!-- Enter name -->
+                            Try
+                        </h2>
+                        <input type="number" id="teamB" name="teamB" class="input" placeholder="enter value" />
+                    </div>
+
+                    <!-- InputField components -->
+                    <div class="box-1">
+                        <input type="number" id="teamA" name="teamA" class="input" placeholder="enter value" />
+                        <h2 class="capitalize font-roboto font-normal tracking-wider flex items-center justify-center text-gray-500">
+                            <!-- Enter name -->
+                            Try
+                        </h2>
+                        <input type="number" id="teamB" name="teamB" class="input" placeholder="enter value" />
+                    </div>
+
+                    <!-- InputField components -->
+                    <div class="box-1">
+                        <input type="number" id="teamA" name="teamA" class="input" placeholder="enter value" />
+                        <h2 class="capitalize font-roboto font-normal tracking-wider flex items-center justify-center text-gray-500">
+                            <!-- Enter name -->
+                            Try
+                        </h2>
+                        <input type="number" id="teamB" name="teamB" class="input" placeholder="enter value" />
+                    </div>
+
+                    <!-- Input Time -->
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Button Component -->
+    </form>
+</body>
+</html>
